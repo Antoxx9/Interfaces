@@ -12,8 +12,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faUserCircle, faHome } from '@fortawesome/fontawesome-free-solid'
-import './header.scss'
+import { faUserCircle, faHome, faQuestionCircle } from '@fortawesome/fontawesome-free-solid'
+import './header.css'
 
 class Header extends React.Component {
   constructor(props) {
@@ -35,34 +35,40 @@ class Header extends React.Component {
       <div className='header'>
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/">
-            <FontAwesomeIcon icon={faHome} size={'2x'} />
+            <span className='name'>Name Of the app</span>
+            <FontAwesomeIcon className='icon' icon={faHome} size={'2x'} />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink href="/components/">Components</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
-              </NavItem>
               <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  Options
+                <DropdownToggle className='dropdownButton' nav caret>
+                  Juegos
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
-                  </DropdownItem>
-                  <DropdownItem>
-                    Option 2
+                    <NavLink href='/games/juego1'>
+                      Juego1
+                    </NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    <FontAwesomeIcon icon={faUserCircle} size={'3x'}/>
+                    <NavLink href='/games/juego2'>
+                      Juego2
+                    </NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href='/' title='Editar Perfil'>
+                  <FontAwesomeIcon className='icon' icon={faUserCircle} size={'2x'} />
+                </NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href='/' title='Ayuda'>
+                  <FontAwesomeIcon className='icon' icon={faQuestionCircle} size={'2x'} />
+                </NavLink>
+              </NavItem>
             </Nav>
           </Collapse>
         </Navbar>

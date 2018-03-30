@@ -1,0 +1,41 @@
+.footer{
+  background-color: blue;
+  border-top: 1px solid lightblue;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: 69px;
+  width: 100%;
+
+  .text{
+    color: white;
+    font-weight: bold;
+    font-family: "Noto Sans CJK KR Bold", serif;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .copyright{
+    text-align: left;
+    padding: 10px 10px 10px 60px;
+    color: white;
+  }
+
+  .lock{
+    text-align: right;
+    padding: 10px 60px 10px 10px;
+    color: white;
+  }
+
+  .padding20{
+    padding: 10px 10px 20px 20px;
+  }
+
+}
+
+.phantom{
+  display: block;
+  padding: 20px;
+  height: 60px;
+  width: 100%;
+}

@@ -1,0 +1,29 @@
+.header {
+  border-bottom: 1px solid lightblue;
+  padding: 0px 15px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background-color: blue; }
+  .header .icon {
+    color: white; }
+  .header .name {
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: "Noto Sans CJK KR Bold", serif; }
+  .header .nav-item {
+    margin: 0 10px; }
+  .header .dropdownButton {
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: white; }
+  .header .dropdown-menu {
+    border-radius: 15px; }
+  .header .dropdown-item {
+    text-align: center; }
+  .header .dropdown-item.active,
+  .header .dropdown-item:active {
+    background-color: lightgray; }

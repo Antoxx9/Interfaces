@@ -1,12 +1,44 @@
 .header{
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid lightblue;
   padding: 0px 15px;
   margin-top: 5px;
   margin-bottom: 10px;
-  background-color: lightgray;
+  background-color: blue;
 
-  .home{
+  .icon{
     color: white;
   }
 
+  .name{
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: "Noto Sans CJK KR Bold", serif;
+  }
+
+  .nav-item{
+    margin: 0 10px;
+  }
+
+  .dropdownButton{
+    border: 1px solid;
+    border-radius: 10px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: white;
+  }
+
+  .dropdown-menu{
+    border-radius: 15px;
+  }
+
+  .dropdown-item{
+    text-align: center;
+  }
+
+  .dropdown-item.active,
+  .dropdown-item:active {
+    background-color: lightgray;
+  }
 }
