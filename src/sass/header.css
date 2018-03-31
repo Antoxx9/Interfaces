@@ -3,7 +3,8 @@
   padding: 0px 15px;
   margin-top: 5px;
   margin-bottom: 10px;
-  background-color: blue; }
+  background-color: blue;
+  width: 100%; }
   .header .icon {
     color: white; }
   .header .name {

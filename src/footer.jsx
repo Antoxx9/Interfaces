@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap'
-import './footer.css'
+import './sass/footer.css'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faCopyright, faLock } from '@fortawesome/fontawesome-free-solid'
 
@@ -8,7 +8,7 @@ import { faCopyright, faLock } from '@fortawesome/fontawesome-free-solid'
 class Footer extends React.Component {
   render () {
     return <div>
-      <div className='phantom' />
+      <div className='phantom'/>
       <div className='footer'>
         <Row>
           <Col className='copyright' xs={4}>

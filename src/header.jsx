@@ -12,8 +12,8 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faUserCircle, faHome, faQuestionCircle } from '@fortawesome/fontawesome-free-solid'
-import './header.css'
+import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt } from '@fortawesome/fontawesome-free-solid'
+import './sass/header.css'
 
 class Header extends React.Component {
   constructor(props) {
@@ -41,6 +41,7 @@ class Header extends React.Component {
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
+              {this.props.logged &&
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle className='dropdownButton' nav caret>
                   Juegos
@@ -59,16 +60,26 @@ class Header extends React.Component {
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
+              }
+              {this.props.logged &&
               <NavItem>
                 <NavLink href='/' title='Editar Perfil'>
-                  <FontAwesomeIcon className='icon' icon={faUserCircle} size={'2x'} />
+                  <FontAwesomeIcon className='icon' icon={faUserCircle} size={'2x'}/>
                 </NavLink>
               </NavItem>
+              }
               <NavItem>
                 <NavLink href='/' title='Ayuda'>
                   <FontAwesomeIcon className='icon' icon={faQuestionCircle} size={'2x'} />
                 </NavLink>
               </NavItem>
+              {this.props.logged &&
+              <NavItem>
+                <NavLink href='/' title='Sing-Out'>
+                  <FontAwesomeIcon className='icon' icon={faSignOutAlt} size={'2x'}/>
+                </NavLink>
+              </NavItem>
+              }
             </Nav>
           </Collapse>
         </Navbar>
