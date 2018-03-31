@@ -1,18 +1,12 @@
 import React, { Component } from 'react';
 import './sass/App.css'
-import Header from './header'
-import Footer from './footer'
-import MainPage from './mainPage'
+import Body from "./body";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header logged={false}/>
-        <div>
-        <MainPage/>
-        </div>
-        <Footer/>
+        <Body/>
       </div>
     );
   }
