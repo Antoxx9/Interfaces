@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import { Button, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import { faGooglePlus, faFacebook, faTwitter } from '@fortawesome/fontawesome-free-brands'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import './sass/singup.css'
+import './styles.css'
 
-class Singup extends Component {
+class SignUp extends Component {
   render() {
     return (
-      <div className='container mainPage singup'>
+      <div className='container mainPage signup'>
         <Label className='mainText'>
           Create your account
         </Label>
@@ -51,4 +51,4 @@ class Singup extends Component {
   }
 }
 
-export default Singup;
+export default SignUp;

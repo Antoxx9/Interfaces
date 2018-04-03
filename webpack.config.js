@@ -16,6 +16,7 @@ module.exports = {
   },
   devtool: '#source-map',
   module: {
+    strictExportPresence: true,
     // How to process project files with loaders
     loaders: [
       // Process any .js or .jsx file with Babel

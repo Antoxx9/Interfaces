@@ -3,7 +3,7 @@ import {
   Button, FormGroup, Label, Input, Row, Col, Card, CardBody, CardImg, CardTitle, CardSubtitle,
   CardText
 } from 'reactstrap';
-import './sass/profile.css'
+import './styles.css'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faTrophy } from "@fortawesome/fontawesome-free-solid";
 
@@ -40,4 +40,4 @@ class Profile extends React.Component{
   }
 }
 
-export default Profile
+export default Profile;

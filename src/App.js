@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './sass/App.css'
-import Body from "./body";
+import Body from "./containers/body";
 
 class App extends Component {
   render() {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap'
-import './sass/footer.css'
+import './styles.css'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faCopyright, faLock } from '@fortawesome/fontawesome-free-solid'
 
@@ -26,4 +26,4 @@ class Footer extends React.Component {
   }
 }
 
-export default Footer
+export default Footer;
