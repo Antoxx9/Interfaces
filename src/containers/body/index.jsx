@@ -7,11 +7,13 @@ import Profile from "../../components/profile";
 
 class Body extends React.Component{
   render() {
-    return <div>
-      <Header logged={true}/>
-      <Profile/>
-      <Footer/>
-    </div>
+    return (
+      <div>
+        <Header logged={true}/>
+        <Profile/>
+        <Footer/>
+      </div>
+    );
   }
 }
 
