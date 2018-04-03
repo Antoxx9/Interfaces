@@ -4,7 +4,7 @@ import { faGooglePlus, faFacebook, faTwitter } from '@fortawesome/fontawesome-fr
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import './styles.css'
 
-class LoginPage extends Component {
+class Login extends Component {
   render() {
     return (
       <div className='container mainPage'>
@@ -51,4 +51,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+export default Login;

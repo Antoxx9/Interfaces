@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Helmet } from "react-helmet";
 import './sass/App.css'
-import Body from "./containers/body";
+import HomePage from "./containers/home";
+import LoginPage from "./containers/login";
 import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 
 class App extends Component {
@@ -18,7 +19,8 @@ class App extends Component {
         />
         <Router>
           <Switch>
-            <Route exact path="/" component={Body}/>
+            <Route exact path="/" component={HomePage}/>
+            <Route path="/login" component={LoginPage}/>
           </Switch>
         </Router>
         </div>
