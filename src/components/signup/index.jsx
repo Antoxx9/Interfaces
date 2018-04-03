@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Button, FormGroup, Label, Input, Row, Col } from 'reactstrap';
 import { faGooglePlus, faFacebook, faTwitter } from '@fortawesome/fontawesome-free-brands'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import './styles.css'
+import './styles.scss'
 
 class SignUp extends Component {
   render() {

@@ -3,7 +3,7 @@ import {
   Button, FormGroup, Label, Input, Row, Col, Card, CardBody, CardImg, CardTitle, CardSubtitle,
   CardText
 } from 'reactstrap';
-import './styles.css'
+import './styles.scss'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faTrophy } from "@fortawesome/fontawesome-free-solid";
 

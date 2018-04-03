@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col } from 'reactstrap'
-import './styles.css'
+import './styles.scss'
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faCopyright, faLock } from '@fortawesome/fontawesome-free-solid'
 

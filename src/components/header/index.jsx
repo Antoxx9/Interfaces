@@ -13,7 +13,7 @@ import {
   DropdownItem } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt } from '@fortawesome/fontawesome-free-solid'
-import './styles.css'
+import './styles.scss'
 
 class Header extends React.Component {
   constructor(props) {
