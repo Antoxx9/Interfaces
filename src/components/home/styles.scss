@@ -1,0 +1,29 @@
+.parallax{
+  background-image: url('../../images/blue-geometric-wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba($color: #204d86, $alpha: 0.3);
+  background-blend-mode: multiply;
+}
+
+.bigTitle{
+  padding-top: 7%;
+  padding-bottom: 7%;
+  text-align: center;
+  h1{
+    font-size: 5vw;
+    color: rgb(255, 255, 255);//rgb(30, 46, 61);
+  }
+
+  p{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 2vw;
+  }
+  .logo{
+    align-self: center;
+  }
+
+}

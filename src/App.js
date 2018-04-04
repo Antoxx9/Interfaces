@@ -8,7 +8,7 @@ import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <main className="App">
         <Helmet
           titleTemplate="Autismovida - %s"
           defaultTitle="Autismovida"
@@ -23,7 +23,7 @@ class App extends Component {
             <Route path="/login" component={LoginPage}/>
           </Switch>
         </Router>
-        </div>
+        </main>
     );
   }
 }

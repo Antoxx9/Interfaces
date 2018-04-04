@@ -11,9 +11,10 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt } from '@fortawesome/fontawesome-free-solid'
-import './styles.scss'
+import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt } from '@fortawesome/fontawesome-free-solid';
+import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
+import './styles.scss';
 
 class Header extends React.Component {
   constructor(props) {
@@ -32,58 +33,56 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className='header'>
-        <Navbar color="faded" light expand="md">
-          <NavbarBrand href="/">
-            <span className='name'>Name Of the app</span>
-            <FontAwesomeIcon className='icon' icon={faHome} size={'2x'} />
-          </NavbarBrand>
-          <NavbarToggler onClick={this.toggle} />
-          <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              {this.props.logged &&
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle className='dropdownButton' nav caret>
-                  Juegos
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem>
-                    <NavLink href='/games/juego1'>
-                      Juego1
-                    </NavLink>
-                  </DropdownItem>
-                  <DropdownItem divider />
-                  <DropdownItem>
-                    <NavLink href='/games/juego2'>
-                      Juego2
-                    </NavLink>
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
-              }
-              {this.props.logged &&
-              <NavItem>
-                <NavLink href='/' title='Editar Perfil'>
-                  <FontAwesomeIcon className='icon' icon={faUserCircle} size={'2x'}/>
-                </NavLink>
-              </NavItem>
-              }
-              <NavItem>
-                <NavLink href='/' title='Ayuda'>
-                  <FontAwesomeIcon className='icon' icon={faQuestionCircle} size={'2x'} />
-                </NavLink>
-              </NavItem>
-              {this.props.logged &&
-              <NavItem>
-                <NavLink href='/' title='Sing-Out'>
-                  <FontAwesomeIcon className='icon' icon={faSignOutAlt} size={'2x'}/>
-                </NavLink>
-              </NavItem>
-              }
-            </Nav>
-          </Collapse>
-        </Navbar>
-      </div>
+      <Navbar className="header" color="faded" expand="md">
+        <NavbarBrand className="logo" href="/">
+          <FontAwesomeIcon icon={faAutoprefixer} size={'2x'} />
+          <span className='name'>AUTISMOVIDA</span>
+        </NavbarBrand>
+        <NavbarToggler className="" onClick={this.toggle} />
+        <Collapse isOpen={this.state.isOpen} navbar>
+          <Nav className="ml-auto" navbar>
+            {this.props.logged &&
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle className='dropdownButton' nav caret>
+                Juegos
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>
+                  <NavLink href='/games/juego1'>
+                    Juego1
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <NavLink href='/games/juego2'>
+                    Juego2
+                  </NavLink>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+            }
+            {this.props.logged &&
+            <NavItem>
+              <NavLink href='/' title='Editar Perfil'>
+                <FontAwesomeIcon className='icon' icon={faUserCircle} />
+              </NavLink>
+            </NavItem>
+            }
+            <NavItem>
+              <NavLink href='/' title='Ayuda'>
+                <FontAwesomeIcon className='icon' icon={faQuestionCircle}  />
+              </NavLink>
+            </NavItem>
+            {this.props.logged &&
+            <NavItem>
+              <NavLink href='/' title='Sing-Out'>
+                <FontAwesomeIcon className='icon' icon={faSignOutAlt} />
+              </NavLink>
+            </NavItem>
+            }
+          </Nav>
+        </Collapse>
+      </Navbar>
     );
   }
 }
