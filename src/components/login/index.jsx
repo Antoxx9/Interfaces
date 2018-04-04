@@ -26,7 +26,7 @@ class Login extends Component {
               <Button className='button'>Log in</Button>
             </Col>
             <Col xs={6}>
-              <Label className='mtext marginT' for="exampleEmail">Don't have an account <a href='/'>sign in</a></Label>
+              <Label className='mtext marginT' for="exampleEmail">Don't have an account <a href='/signup'>sign up</a></Label>
               <Row xs={12}>
                 <Col xs={2}>
                   <FontAwesomeIcon className='google logicon' icon={faGooglePlus} size={'3x'} />

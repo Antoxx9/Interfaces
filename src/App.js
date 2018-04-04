@@ -4,6 +4,8 @@ import './sass/App.css'
 import HomePage from "./containers/home";
 import LoginPage from "./containers/login";
 import GamePage from "./containers/games";
+import SignUpPage from "./containers/signup";
+import ProfilePage from "./containers/profile";
 import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 
 class App extends Component {
@@ -22,6 +24,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={HomePage}/>
             <Route path="/login" component={LoginPage}/>
+            <Route path="/signup" component={SignUpPage}/>
+            <Route path="/profile" component={ProfilePage}/>
             <Route path="/games/game1" component={() => {return <GamePage title={'Aprendiendo Emociones'}
                                                                     game={'Aprender\n Entender \nReconocer'}
                                                                     gameNumber={1}/>}}/>

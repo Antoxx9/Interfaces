@@ -44,7 +44,7 @@ class SignUp extends Component {
           </Row>
         </div>
         <Label className='textBelow'>
-          Already have an account <a href='/'>sign in</a>
+          Already have an account <a href='/login'>sign in</a>
         </Label>
       </div>
     );
