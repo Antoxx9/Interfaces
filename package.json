@@ -22,7 +22,8 @@
     "react-scripts": "1.1.1",
     "react-scripts-sass": "^1.1.3",
     "reactstrap": "^5.0.0-beta.3",
-    "sass-loader": "^6.0.7"
+    "sass-loader": "^6.0.7",
+    "yarn": "^1.5.1"
   },
   "scripts": {
     "start": "react-scripts-with-sass start",

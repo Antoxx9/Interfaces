@@ -8,7 +8,7 @@ class LoginPage extends React.Component{
   render() {
     return (
       <div>
-        <Header logged={true}/>
+        <Header logged={false}/>
         <Login/>
         <Footer/>
       </div>

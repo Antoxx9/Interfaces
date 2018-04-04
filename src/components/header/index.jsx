@@ -48,14 +48,32 @@ class Header extends React.Component {
               </DropdownToggle>
               <DropdownMenu right>
                 <DropdownItem>
-                  <NavLink href='/games/juego1'>
-                    Juego1
+                  <NavLink href='/games/game1'>
+                    Aprendiendo Emociones
                   </NavLink>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
-                  <NavLink href='/games/juego2'>
-                    Juego2
+                  <NavLink href='/games/game2'>
+                    Tablero Mágico
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <NavLink href='/games/game3'>
+                    Maneja tus Reflejos
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <NavLink href='/games/game4'>
+                    Se creativo, Diviertete!
+                  </NavLink>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <NavLink href='/games/game5'>
+                    Entrenando el cuerpo
                   </NavLink>
                 </DropdownItem>
               </DropdownMenu>

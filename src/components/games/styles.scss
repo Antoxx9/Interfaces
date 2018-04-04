@@ -1,0 +1,101 @@
+.gamePage{
+  .bg{
+    width: 100%;
+    height: 86.2vh;
+    background-image: url('../../images/blue-geometric-wallpaper.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-color: rgba($color: #204d86, $alpha: 0.3);
+    background-blend-mode: multiply;
+  }
+
+  .container{
+    background: white;
+    border-radius: 20px;
+    max-height: 700px;
+  }
+
+  .padding{
+    padding-top: 100px;
+  }
+
+  .title{
+    font-size: 35px;
+    font-family: "Noto Sans CJK KR Bold", serif;
+    text-align: center;
+    margin-bottom: 45px;
+    border-top: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 200px;
+  }
+
+  .labels{
+    padding-left: 15px;
+    padding-right: 15px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .internPadding{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .sideBar{
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 550px;
+  }
+
+  .playIcon{
+    color: blue;
+  }
+
+  .margin40{
+    margin-top: 40px;
+  }
+
+  .name{
+    font-family: "Noto Sans CJK KR Bold", serif;
+    font-size: 45px;
+    font-weight: normal;
+    line-height: 48px;
+    margin: 0;
+    color: #1470bb !important;
+    margin-bottom: 20px;
+  }
+
+  .game1{
+    background-image: url('../../images/faceGame.png');
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+  }
+
+  .game2{
+    background-image: url('../../images/game2.jpg');
+    background-size: 75% auto;
+    background-repeat: no-repeat;
+  }
+
+  .game3{
+    background-image: url('../../images/game3.png');
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+  }
+
+  .game4{
+    background-image: url('../../images/game4.png');
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+  }
+
+  .game5{
+    background-image: url('../../images/game5.jpg');
+    background-size: 90% auto;
+    background-repeat: no-repeat;
+  }
+}

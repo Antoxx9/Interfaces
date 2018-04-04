@@ -8,7 +8,7 @@ class SignUpPage extends React.Component{
   render() {
     return (
       <div>
-        <Header logged={true}/>
+        <Header logged={false}/>
         <SignUp/>
         <Footer/>
       </div>
