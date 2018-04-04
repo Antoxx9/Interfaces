@@ -63,13 +63,13 @@ class Header extends React.Component {
             }
             {this.props.logged &&
             <NavItem>
-              <NavLink href='/' title='Editar Perfil'>
+              <NavLink href='/profile' title='Editar Perfil'>
                 <FontAwesomeIcon className='icon' icon={faUserCircle} />
               </NavLink>
             </NavItem>
             }
             <NavItem>
-              <NavLink href='/' title='Ayuda'>
+              <NavLink href='/about' title='Ayuda'>
                 <FontAwesomeIcon className='icon' icon={faQuestionCircle}  />
               </NavLink>
             </NavItem>
