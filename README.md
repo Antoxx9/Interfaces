@@ -10,4 +10,8 @@ To setup:
 
 To run:
 
+`$ yarn start`
+
+    or
+
 `$ npm start`
