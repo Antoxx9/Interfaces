@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Container} from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
-import {faEyeSlash, faMeh, faRedoAlt, faFrown} from '@fortawesome/fontawesome-free-solid';
+import {faEyeSlash, faMeh, faRedoAlt, faFrown, faUsers, faAssistiveListeningSystems, faCapsules} from '@fortawesome/fontawesome-free-solid';
 import Card from '../card';
 import './styles.scss';
 
@@ -28,15 +28,18 @@ class Home extends React.Component {
           </div>
           
           <hr/>
+
             <Container>
             <h2>CARACTERÍSTICAS</h2>
-              <Row className="symptoms">
+              <Row className="cardList">
                 <Card 
                   title="Ausencia o poco contacto visual" 
                   icon={faEyeSlash}
+                  message="Menores que evitan el contacto visual y se aíslan"
                 />
                 <Card 
-                  title="Tieneden a tener comportamientos repetitivos" 
+                  title="Tieneden a tener comportamientos repetitivos"
+                  message="Repiten acciones una y otra vez. Repiten o imitan palabras o frases que escuchan."
                   icon={faRedoAlt}
                 />
                 <Card 
@@ -44,13 +47,20 @@ class Home extends React.Component {
                   icon={faFrown}
                 />
               </Row>
-              <Row> Terapias
-                <Col>T1
-                </Col>
-                <Col> T2
-                </Col>
-                <Col> T3
-                </Col>
+              <h2>TERAPIAS</h2>
+              <Row className="cardList">
+              <Card 
+                  title="Terapia conductual" 
+                  icon={faUsers}
+                />
+                <Card
+                  title="Programa de educación especial"
+                  icon={faAssistiveListeningSystems}
+                />
+                <Card
+                  title="Farmacoterapia"
+                  icon={faCapsules}
+                />
               </Row>
             </Container>
           </div>
