@@ -38,14 +38,27 @@
     padding-top: 7%;
   }
 
+  .cardListList{
+    width: 70%;
+  }
+
+  .listDescription{
+    color: #838383;
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5%;
+    font-size: 1.5rem;
+    text-align: center;
+    align-self: center;
+  }
+
   .definition{
     margin: 0 auto;
     width: 33%;
     padding-bottom: 3%;
     line-height: 1.75vw;
     p{
-      font-size: 1vw;
-      font-weight: 600;
+      font-size: 1.5rem;
       color: #838383
     }
     .titulito{
@@ -61,6 +74,34 @@
   .cardList{
     padding-top: 5%;
     padding-bottom: 10%;
+  }
+  .shrinkHr{
+    width: 60%;
+  }
+}
+
+.registerSection {
+  background-color: rgb(61, 128, 230);
+  margin: 0 auto;
+  
+  h2{
+    color: white;
+  }
+
+  .registerButton{
+    background-color: white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  .hollow{
+    text-align: center;
+    padding-top: 2%;
+    margin: 0 auto;
+    height: 10rem;
+    width: 10%;
   }
 
 }

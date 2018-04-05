@@ -9,16 +9,18 @@
 .sytnom {
   text-align: center;
   border: none;
+  min-width: 100px;
+  background-color: rgb(160, 205, 240) !important;
 }
 
 .cardTitle{
-  font-size: 1vw;
+  font-size: 1.3rem;
   font-weight: bold;
   width: 80%;
   margin: 0 auto;
   padding-top: 2rem;
   font-weight: 600;
-  color: #838383
+  color: rgb(64, 103, 133);
 }
 
 .text{
@@ -26,4 +28,11 @@
   color: #838383;
   margin: 0 auto;
   width: 70%
+}
+
+.roundy{
+  margin-top: 1.5rem;
+  background-color: rgb(219, 219, 219) !important;
+  border-radius: 1rem;
+  padding-bottom: 1rem;
 }

@@ -11,20 +11,33 @@ class Footer extends React.Component {
     return (
       <div className='footer'>
         <Nav>
-          <NavLink>
-            <FontAwesomeIcon className='icon' icon={faFacebookSquare} size={'3x'} />
-          </NavLink>
-          <NavLink>
-            <FontAwesomeIcon className='icon' icon={faGooglePlusG} size={'3x'} />
-          </NavLink>
-          <NavLink>          
-            <FontAwesomeIcon className='icon' icon={faTwitter} size={'3x'} />
-          </NavLink>
-          <NavItem className="copyright">
-            <NavLink>
-              <p>Autismovida se reserva todos los derechos <FontAwesomeIcon className='icon' icon={faCopyright} size={'2x'} /></p> 
-            </NavLink>
-          </NavItem>
+          <Row>
+            <Col xs={3}>
+              <NavLink>
+                <FontAwesomeIcon className='icon' icon={faFacebookSquare} size={'3x'} />
+              </NavLink>
+            </Col>
+            <Col xs={3}>
+              <NavLink>
+                <FontAwesomeIcon className='icon' icon={faGooglePlusG} size={'3x'} />
+              </NavLink>
+            </Col>
+            <Col xs={3}>
+              <NavLink>
+                <FontAwesomeIcon className='icon' icon={faTwitter} size={'3x'} />
+              </NavLink>
+            </Col>
+            <Col className="float-right" xs={3}>
+              <NavItem className="copyright">
+                <NavLink>
+                  <p>Autismovida se reserva todos los derechos <FontAwesomeIcon className='icon' icon={faCopyright} size={'2x'} /></p> 
+                </NavLink>
+              </NavItem>
+            </Col>
+          </Row>
+          
+          
+          
         </Nav>
       </div>
     );
