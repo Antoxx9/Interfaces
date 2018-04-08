@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt } from '@fortawesome/fontawesome-free-solid';
+import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt, faSignInAlt } from '@fortawesome/fontawesome-free-solid';
 import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
 import './styles.scss';
 
@@ -68,6 +68,13 @@ class Header extends React.Component {
                   </NavLink>
               </DropdownMenu>
             </UncontrolledDropdown>
+            }
+            {!this.props.logged &&
+            <NavItem>
+              <NavLink href='/login' title='Sing-Out'>
+                <FontAwesomeIcon className='icon' icon={faSignInAlt} />
+              </NavLink>
+            </NavItem>
             }
             {this.props.logged &&
             <NavItem>

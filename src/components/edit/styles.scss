@@ -1,8 +1,14 @@
 .edit{
+  background-color: rgb(66, 119, 199);
   
   .editForm{
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     text-align: left;
+    background-color: white;
+  }
+  label{
+    color: rgb(93, 153, 199);
+    font-weight: bold;
   }
 }

@@ -8,7 +8,7 @@ class ProfilePage extends React.Component{
   render() {
     return (
       <div>
-        <Header logged={false}/>
+        <Header logged={true}/>
         <Profile/>
         <Footer/>
       </div>

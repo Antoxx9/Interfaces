@@ -8,7 +8,7 @@ class HomePage extends React.Component{
   render() {
     return (
       <div>
-        <Header logged={true}/>
+        <Header logged={false}/>
         <Home/>
         <Footer/>
       </div>

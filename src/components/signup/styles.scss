@@ -1,11 +1,13 @@
 .signup{
-
+  height: 100%;
+  background-color: rgb(241, 243, 230);
   .text{
     margin-bottom: 30px;
   }
 
   .mainText{
     margin-bottom: 0;
+    color: steelblue;
   }
 
   .button{
@@ -20,4 +22,15 @@
     font-family: "Noto Sans CJK KR Bold", serif;
     font-size: 15px;
   }
+}
+
+.sigbn{
+  background-image: url('../../images/blue-geometric-wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba($color: #204d86, $alpha: 0.3);
+  background-blend-mode: multiply;
+  padding-bottom: 7.228%;
 }
