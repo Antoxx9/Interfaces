@@ -8,10 +8,14 @@ import { faFacebookSquare, faGooglePlusG, faTwitter} from '@fortawesome/fontawes
 
 class Footer extends React.Component {
   render () {
+    var divStyle = {
+     margin: '0 auto',
+     width: '100%',
+    };
     return (
       <div className='footer'>
         <Nav>
-          <Row>
+          <Row style={ divStyle }>
             <Col xs={3}>
               <NavLink>
                 <FontAwesomeIcon className='icon' icon={faFacebookSquare} size={'3x'} />

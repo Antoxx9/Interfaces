@@ -1,9 +1,12 @@
 .profile{
 
   font-family: "Noto Sans CJK KR Bold", serif;
+  background-color: rgb(66, 119, 199);
+  padding-top: 5%;
+  padding-bottom: 5%;
 
   .card{
-    border: none;
+    background-color: rgb(238, 238, 238);
   }
 
   .image{
@@ -12,6 +15,7 @@
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 1rem;
   }
 
   .body{

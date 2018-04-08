@@ -11,32 +11,32 @@ import { faTrophy } from "@fortawesome/fontawesome-free-solid";
 class Profile extends React.Component{
 
   render() {
-    return <div className='profile'>
-      <Row xs={12}>
-        <Col xs={6}>
-          <Card>
-            <CardImg className='image' top src={'https://parentinghub.co.za/wp-content/uploads/2017/10/Autism.jpg'} alt="Card image cap" />
-            <CardBody className='body'>
-              <CardTitle className='nameText'>Full Name</CardTitle>
-              <CardText className='descText'>The description of the child, the mom, the dad, or whatever they want to put here</CardText>
-              <Row xs={12}>
-                <Col xs={1}>
-                  <FontAwesomeIcon className='google icon' icon={faTrophy} size={'3x'} />
-                </Col>
-                <Col xs={8}>
-                  <CardSubtitle className='text'>Range of the child in the games</CardSubtitle>
-                </Col>
-              </Row>
-              <CardText className='phraseText'>Some phrase the user likes or not idc</CardText>
-            </CardBody>
-          </Card>
-        </Col>
-        <Col xs={6}>
-          <Row xs={12}>
-          </Row>
-        </Col>
-      </Row>
-    </div>
+    var sizestyle ={
+      width: '60%',
+      margin: '0 auto',
+      "border-radius": "1rem",
+    }
+    return (
+      <section className='profile'>
+        <Card style={sizestyle}>
+          <CardImg className='image' top src={'https://parentinghub.co.za/wp-content/uploads/2017/10/Autism.jpg'} alt="Card image cap" />
+          <CardBody >
+            <CardTitle className='nameText'>Robert Galarga</CardTitle>
+            <CardSubtitle className='descText'>The description of the child. The description of the child. The description of the child. The description of the child.</CardSubtitle>
+            <CardSubtitle className='descText'>Madre de Galarga</CardSubtitle>
+            <CardSubtitle className='descText'>Padre Galarga</CardSubtitle>
+            <CardSubtitle className='descText'>Correo de contacto</CardSubtitle>
+            <CardSubtitle className='descText'>Espectro de clasificación</CardSubtitle>
+            <CardText>
+                  <FontAwesomeIcon icon={faTrophy} size={'3x'} />
+                  <CardSubtitle className='text'>Clasificación del niño en los juegos</CardSubtitle>
+            </CardText>
+            <CardText className='phraseText'>Información Adicional</CardText>
+            <Button href="/edit">Editar Perfil</Button>
+          </CardBody>
+        </Card>
+      </section>
+    );
   }
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Row, Col, Container} from 'reactstrap';
+import {Row, Col, Container, Button} from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
 import {faEyeSlash, faMeh, faRedoAlt, faFrown, faUsers, faAssistiveListeningSystems, faCapsules} from '@fortawesome/fontawesome-free-solid';
@@ -89,9 +89,7 @@ class Home extends React.Component {
         <section className="registerSection">
           <div className="hollow">
             <h2>Regístrate</h2>
-            <div className="registerButton">
-              <a href="/signup">Registrasre</a>
-            </div>
+            <Button href="/signup" className="registerButton"color="link">Registrarse</Button>
           </div>
         </section>
       </div>

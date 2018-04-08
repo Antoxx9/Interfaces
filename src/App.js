@@ -6,6 +6,8 @@ import LoginPage from "./containers/login";
 import GamePage from "./containers/games";
 import SignUpPage from "./containers/signup";
 import ProfilePage from "./containers/profile";
+import AboutPage from "./containers/about";
+import EditPage from "./containers/edit";
 import {BrowserRouter as Router, Route, Switch, } from "react-router-dom";
 
 class App extends Component {
@@ -41,6 +43,8 @@ class App extends Component {
             <Route path="/games/game5" component={() => {return <GamePage title={'Entrenando el cuerpo'}
                                                                           game={'Desarrolla\n Disfruta \nMuevete'}
                                                                           gameNumber={5}/>}}/>
+            <Route path="/about" component={AboutPage} />
+            <Route path="/edit" component={EditPage} />
           </Switch>
         </Router>
         </main>

@@ -1,0 +1,41 @@
+.about{
+  height: 100%;
+  background-image: url('../../images/blue-geometric-wallpaper.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba($color: #204d86, $alpha: 0.3);
+  background-blend-mode: multiply;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  text-align: left;
+  color: #5f5e5e;
+
+  .aboutContent{
+    background-color: rgb(241, 243, 230);;
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 1rem;
+
+    h1{
+      color: rgb(44, 107, 155);
+      font-weight: bold;
+
+    }
+
+    h2{
+      color: rgb(93, 153, 199);
+      font-weight: bold;
+    }
+
+    ul{
+      margin-bottom: 0;
+    }
+
+    .aboutText{
+      padding: 7.62%;
+    }
+
+  }
+}

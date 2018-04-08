@@ -81,11 +81,12 @@
 }
 
 .registerSection {
-  background-color: rgb(61, 128, 230);
+  background-color: rgb(66, 119, 199);
   margin: 0 auto;
   
   h2{
     color: white;
+    font-weight: bold;
   }
 
   .registerButton{
@@ -96,9 +97,16 @@
     vertical-align: middle;
   }
 
+  .registerButton:hover{
+    text-decoration-line: none;
+    background-color: white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
   .hollow{
     text-align: center;
     padding-top: 2%;
+    padding-bottom: 10%;
     margin: 0 auto;
     height: 10rem;
     width: 10%;
