@@ -1,10 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
   Button, FormGroup, Label, Input, FormText, Form, FormFeedback, Container
 } from 'reactstrap';
 import './styles.scss'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
-import { faTrophy } from "@fortawesome/fontawesome-free-solid";
 
 
 class EditProfile extends React.Component{

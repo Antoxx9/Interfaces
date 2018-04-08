@@ -12,7 +12,7 @@ import {
   DropdownMenu,
   DropdownItem } from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faUserCircle, faHome, faQuestionCircle, faSignOutAlt, faSignInAlt } from '@fortawesome/fontawesome-free-solid';
+import { faUserCircle, faQuestionCircle, faSignOutAlt, faSignInAlt } from '@fortawesome/fontawesome-free-solid';
 import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
 import './styles.scss';
 

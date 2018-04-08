@@ -1,11 +1,10 @@
 import React from 'react';
-import {Row, Col, Container, Button} from 'reactstrap';
+import {Row, Container, Button} from 'reactstrap';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import {faAutoprefixer} from '@fortawesome/fontawesome-free-brands';
 import {faEyeSlash, faMeh, faRedoAlt, faFrown, faUsers, faAssistiveListeningSystems, faCapsules} from '@fortawesome/fontawesome-free-solid';
 import Card from '../card';
 import './styles.scss';
-import { width } from 'window-size';
 
 class Home extends React.Component {
   render(){

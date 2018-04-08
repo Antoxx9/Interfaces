@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
+import React from 'react'
 import {
-  Button, FormGroup, Label, Input, Row, Col, Card, CardBody, CardImg, CardTitle, CardSubtitle,
+  Button, Card, CardBody, CardImg, CardTitle, CardSubtitle,
   CardText
 } from 'reactstrap';
 import './styles.scss'

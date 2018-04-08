@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import { Button, FormGroup, Label, Input, Row, Col, FormFeedback } from 'reactstrap';
-import { faGooglePlus, faFacebook, faTwitter } from '@fortawesome/fontawesome-free-brands'
-import FontAwesomeIcon from '@fortawesome/react-fontawesome'
 import './styles.scss'
 
 class SignUp extends Component {
@@ -58,7 +56,7 @@ class SignUp extends Component {
               </Col>
             </Row>
             <Row xs={12}>
-              <Button disabled={!(this.state.p1===this.state.p2) || this.state.p2=="" || this.state.p1==""} className='button'>SING UP</Button>
+              <Button disabled={!(this.state.p1===this.state.p2) || this.state.p2==="" || this.state.p1===""} className='button'>SING UP</Button>
             </Row>
           </div>
           <Label className='textBelow'>
